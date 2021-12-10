@@ -15,6 +15,7 @@ Hiện nay đối với tất cả các trường đại học, việc đăng k�
 ## Mô hình của đề tài gồm:
 * VPC: tạo trên zone us-east-1 với Security Group dành cho Web Server và Database
 * EC2: dùng để chạy ứng dụng web trên server, nằm trong Security Group dành cho Web Server
+       sử dụng instance Amazon Linux 2 
 * RDS: dùng để làm DB, nằm trong Security Group dành cho DB
 * S3: lưu trữ ứng dụng web
 * ELB: cân bằng tải có các Web Server instance
