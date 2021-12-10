@@ -6,14 +6,17 @@ Danh sách thành viên:
 ## Mục đích của đề tài
 Hiện nay đối với tất cả các trường đại học, việc đăng ký môn học của sinh viên là vấn đề cực kì quan trọng, nhưng ở một số trường, hệ thống đăng ký môn học cho sinh viên chưa được thiết kế một cách tối ưu dẫn đến tình trạng sinh viên gặp khó khăn mỗi khi đến đợt đăng ký môn học, có thể gây ra nhiều ảnh hưởng tới việc ra trường đúng hạn và kế hoạch học tập của sinh viên. Từ hiện trạng đó, việc cải thiện chất lượng của hệ thống đăng ký môn học là rất cấp thiết, đề tài xây dụng hệ thống cloud mô phỏng trang đăng ký môn học có thể tự scale up, scale down được nhóm lựa chọn để thực hiện hoá việc cải thiện chất lượng của hệ thống.
 ## Công cụ sử dụng cho dự án là các dịch vụ trong AWS:
-* VPC
-* EC2
-* RDS
-* S3
-* Elastic Load Balancer
-* Auto Scaling Group
+* VPC (Virtual Private Cloud)
+* EC2 (Elastic Compute Cloud)
+* RDS (Relational Database Service)
+* S3 (Simple Storage Service)
+* ELB (Elastic Load Balancer)
+* ASGs (Auto Scaling Group)
 ## Mô hình của đề tài gồm:
-* VPC (us-east-1): 
-** Sử dụng để tạo ra cloud riêng cho ứng dụng
-** Gồm 2 Public Subnet (dùng cho Web Server) và 2 Private Subnet (dùng cho DB) nằm trên 2 zone khác nhau (us-east-1a và us-east-1a)
+* VPC: tạo trên zone us-east-1 với Security Group dành cho Web Server và Database
+* EC2: dùng để chạy ứng dụng web trên server, nằm trong Security Group dành cho Web Server
+* RDS: dùng để làm DB, nằm trong Security Group dành cho DB
+* S3: lưu trữ ứng dụng web
+* ELB: cân bằng tải có các Web Server instance
+* ASGs: tự động scale up hoặc scale down các instance
 
