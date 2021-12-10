@@ -1,5 +1,4 @@
-#Đề tài: Xây dụng hệ thống Cloud mô phỏng trang đăng ký môn học có thể tự scale up, scale down
-
+# Đề tài: Xây dụng hệ thống Cloud mô phỏng trang đăng ký môn học có thể tự scale up, scale down
 Danh sách thành viên:
 1. Huỳnh Đức Tòng - 19110481
 2. Nguyễn Minh Đức - 19110351
