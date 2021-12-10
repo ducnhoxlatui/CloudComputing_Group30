@@ -15,6 +15,8 @@ Hiện nay đối với tất cả các trường đại học, việc đăng k�
 ## 3. Ứng dụng web của đề tài (Spring Boot Application)
 Ứng dụng được viết bằng java Spring Boot, kích thước vừa đủ để mô tả một trang đăng ký môn học cho sinh viên.
 Dùng lệnh `maven install` để build thành gói jar và sử dụng ở nhiều nơi
+
+![Ảnh](https://ibb.co/3rtHHLP)
 ## 4. Gợi ý các bước để tạo ra mô hình ELB và ASGs
 * Bước 1: Tạo VPC và các Subnet cùng với Security Group sao cho tất cả các tài nguyên phải nằm trên cùng 1 zone và có thể truy cập vào các tài nguyên khác.
 * Bước 2: Tạo database mới để dùng cho ứng dụng Spring Boot (tham khảo database [Data Script](https://textsaver.flap.tv/lists/4hu6) - Aurora/MySQL)
