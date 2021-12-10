@@ -17,7 +17,7 @@ echo "RUN_ARGS=--spring.profiles.active=ec2" > /opt/spring-boot-ec2-demo/spring-
 
 # download the maven artifact from S3
 cd /opt/spring-boot-ec2-demo/ 
-wget https://dkmhbucket.s3.amazonaws.com/dkmh-0.0.1-SNAPSHOT.jar
+wget https://dkmhbucktet.s3.amazonaws.com/dkmh-0.0.1-SNAPSHOT.jar
 
 # create a springboot user to run the app as a service
 useradd springboot
