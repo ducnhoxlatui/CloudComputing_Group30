@@ -16,7 +16,7 @@ Hiện nay đối với tất cả các trường đại học, việc đăng k�
 * VPC: tạo trên zone us-east-1 với Security Group dành cho Web Server và Database
 * EC2: dùng để chạy ứng dụng web trên server, nằm trong Security Group dành cho Web Server([user data](https://textsaver.flap.tv/lists/4htz) để khởi động web server, chú ý chỉ dùng instance Amazon Linux 2)
 * RDS: dùng để làm DB, nằm trong Security Group dành cho DB ([DB Script](https://textsaver.flap.tv/lists/4hu1) dùng để tự động thêm data sau khi tạo database)
-* S3: lưu trữ ứng dụng web: dùng 'wget https://dkmhbucket.s3.amazonaws.com/dkmh-0.0.1-SNAPSHOT.jar' để tải gói .jar của ứng dụng về
+* S3: lưu trữ ứng dụng web: dùng `wget https://dkmhbucket.s3.amazonaws.com/dkmh-0.0.1-SNAPSHOT.jar` để tải gói .jar của ứng dụng về
 * ELB: cân bằng tải có các Web Server instance
 * ASGs: tự động scale up hoặc scale down các instance
 
