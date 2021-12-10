@@ -20,3 +20,4 @@ Hiện nay đối với tất cả các trường đại học, việc đăng k�
 * ELB: cân bằng tải có các Web Server instance
 * ASGs: tự động scale up hoặc scale down các instance
 
+[User data](https://textsaver.flap.tv/lists/4htz)
